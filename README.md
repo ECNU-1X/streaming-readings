@@ -4,11 +4,23 @@
 这是一份 streaming systems 领域相关的论文列表 20+ 篇，涉及 streaming systems 的设计，实现，故障恢复，弹性扩展等各方面。也包含自 2014 年以来 streaming system 和 batch system 的统一模型的论文。
 
 
-本列表目前由 [@lw-lin](https://github.com/lw-lin) 维护。如果你认为还有比较好的论文应当加入到这个列表中，请提交一个 pull request，谢谢！
+本列表目前由 [@liu kun](https://github.com/build2last) 维护。如果你认为还有比较好的论文应当加入到这个列表中，请提交一个 pull request，谢谢！
 
+所有资料仅用于学术研究，此处不会直接提供pdf资源下载。
+
+## 2018 年
+
+- [Structured Streaming: A Declarative API for Real-Time Applications in Apache Spark](https://cs.stanford.edu/~matei/papers/2018/sigmod_structured_streaming.pdf)
+> Armbrust, M. , Das, T. , Torres, J. , Yavuz, B. , Zhu, S. , & Xin, R. , et al. (2018). Structured Streaming: A Declarative API for Real-Time Applications in Apache Spark. International Conference.
+
+- [A survey of state management in big data processing systems](https://arxiv.org/ftp/arxiv/papers/1702/1702.01596.pdf)
+> Quoc-Cuong, T. , Juan, S. , & Volker, M. . (2018). A survey of state management in big data processing systems. The VLDB Journal.
+
+## 2017 年
+- [State management in apache flink](https://dl.acm.org/citation.cfm?id=3137777)
+Carbone, P. , Ewen, S. , Fóra, Gyula, Haridi, S. , Richter, S. , & Tzoumas, K. . (2017). State management in apache flink. Proceedings of the VLDB Endowment, 10(12), 1718-1729.
 
 ## 2016 年
-
 
 - [Drizzle: Fast and Adaptable Stream Processing at Scale](http://shivaram.org/drafts/drizzle.pdf) (Draft): Record-at-a-time 的系统，如 Naiad, Flink，处理延迟较低、但恢复延迟较高；micro-batch 系统，如 Spark Streaming，恢复延迟低但处理延迟略高。Drizzle 则采用 group scheduling + pre-scheduling shuffles 的方式对 Spark Streaming 做了改进，保留低恢复延迟的同时，降低了处理延迟至 100ms 量级。
 
